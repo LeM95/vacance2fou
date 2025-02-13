@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <link rel="stylesheet" href="/stylevacance.css">
+
+</head>
+
+<body>
+    <div class="claboite">
+        <header>
+            <div class="menu">
+                <div class="logo">
+                    <p
+                        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        Vacance2Fou</p>
+                </div>
+                <div class="lien">
+                    <nav>
+                        <ul>
+                            <li class="deroulant"><a href="index.html">Accueil</a>
+                                <ul>
+                                    <li class="sous"><a href="#">test1</a></li>
+                                    <li class="sous"><a href="#">test2</a></li>
+                                    <li class="sous"><a href="#">test3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="deroulant"><a href="Pays.html">Pays</a>
+                                <ul>
+                                    <li class="sous"><a href="#">test</a></li>
+                                    <li class="sous"><a href="#">test</a></li>
+                                    <li class="sous"><a href="#">test</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="deroulant"><a href="offre.html">Offres</a>
+                                <ul>
+                                    <li class="sous"><a href="#">test</a></li>
+                                    <li class="sous"><a href="#">test</a></li>
+                                    <li class="sous"><a href="#">test</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="deroulant"><a href="Découvrir.html">Découvrir</a>
+                                <ul>
+                                    <li class="sous"><a href="#">test</a></li>
+                                    <li class="sous"><a href="#">test</a></li>
+                                    <li class="sous"><a href="#">test</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="deroulant"><a href="shop.html">Shop</a>
+                                <ul>
+                                    <li class="sous"><a href="#">test</a></li>
+                                    <li class="sous"><a href="#">test</a></li>
+                                    <li class="sous"><a href="#">test</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+
+
+
+
+                    </nav>
+                </div>
+
+                <div class="reseaux">
+                    <a href="#" id="connection">Connecter</a>
+                    <a href="#" id="inscription">Inscription</a>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+
+            <div class="connection">
+                <div class="connect">
+                    <div class="centrer">
+                        <h2>Connection</h2>
+                        <h5>Nom d'utilisateur :</h5>
+                        <input type="text">
+                        <h5>Mots de passe : </h5>
+                        <input type="text">
+                        <div class="row">
+                            <button>Confirmer</button>
+                            <button id="Fermer" style="background-color: white;color: black;">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="inscription">
+                    <div class="centrer">
+                        <h2>Inscription</h2>
+                        <h5>Nom d'utilisateur :</h5>
+                        <input type="text">
+                        <h5>Mots de passe : </h5>
+                        <input type="text">
+                        <h5>confirmer le Mots de passe : </h5>
+                        <input type="text">
+                        <div class="row">
+                            <button>Confirmer</button>
+                            <button id="Fermer1" style="background-color: white;color: black;">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="activites">
+            <section class="activite">
+                <img src="img/cerisier  (1).png" alt="Balade en chameau au Maroc">
+                <p>🌍 <strong>Maroc :</strong> Balade en chameau dans le désert de Merzouga et nuit sous les étoiles.</p>
+            </section>
+        
+            <section class="activite inverse">
+                <img src="/img/cerisier .png" alt="Cerisiers en fleurs au Japon">
+                <p>🌸 <strong>Japon :</strong> Admire les cerisiers en fleurs à Tokyo et découvre la tradition du Hanami.</p>
+            </section>
+        
+            <section class="activite">
+                <img src="img/bresil.png" alt="Pain de Sucre au Brésil">
+                <p>🏝 <strong>Brésil :</strong> Prends un téléphérique jusqu’au Pain de Sucre et admire la vue sur Rio.</p>
+            </section>
+        
+            <section class="activite inverse">
+                <img src="img/skie.png" alt="Mont Pilate en Suisse">
+                <p>🏔 <strong>Suisse :</strong> Randonnée au Mont Pilate et descente en luge en hiver !</p>
+            </section>
+        </div>
+            
+
+    </div>
+
+
+
+
+    <footer>
+        <p>© 2024 Vacance2Fou | Agence de voiyage et de vente de
+            produit de voiyage </p>
+    </footer>
+    <script>
+        const connection = document.getElementById("connection")
+        const inscr = document.getElementById("inscription")
+        const conn = document.querySelector(".connect")
+        const insc = document.querySelector(".inscription")
+        const frm = document.querySelector('#Fermer')
+        const frm1 = document.querySelector('#Fermer1')
+        connection.addEventListener('click', () => {
+            conn.style.display = 'flex';
+            insc.style.display = 'none';
+        })
+        inscr.addEventListener('click', () => {
+            conn.style.display = 'none';
+            insc.style.display = 'flex';
+        })
+
+        frm.addEventListener('click', () => {
+            conn.style.display = 'none';
+            insc.style.display = 'none';
+        })
+        const menu = document.querySelector('.menu')
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                menu.classList.add('scrolled');
+            } else {
+                menu.classList.remove('scrolled');
+            }
+        })
+    </script>
+</body>
+
+</html>
