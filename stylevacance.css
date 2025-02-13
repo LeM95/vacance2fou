@@ -8,7 +8,7 @@ body{
 
 
 .claboite {
-    background-image: url('img/109366.jpg');
+    background-image: url('vacance2fou/img/109366.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -255,7 +255,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-image: url("/img/bannière-vacances.jpg");
+    background-image: url("vacance2fou/img/bannière-vacances.jpg");
     background-position: center;
     background-size: cover;
 }
